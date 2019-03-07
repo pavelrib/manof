@@ -326,6 +326,10 @@ class Image(manof.Target):
         return False
 
     @property
+    def pid(self):
+        return ''
+
+    @property
     def device(self):
         if 'device' in self._args:
             return self._args.device
